@@ -1,3 +1,5 @@
+INSERT INTO tb_game_list (name) VALUES ('Aventura e RPG');
+INSERT INTO tb_game_list (name) VALUES ('Jogos de plataforma');
 
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Mass Effect Trilogy', 4.8, 2012, 'Role-playing (RPG), Shooter', 'XBox, Playstation, PC', 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/1.png', 'Uma épica jornada espacial onde suas escolhas moldam o destino da galáxia.', 'A trilogia Mass Effect leva você ao comando do Comandante Shepard em uma luta desesperada contra uma ameaça alienígena ancestral. Combinando ação intensa, narrativa envolvente e decisões morais impactantes, cada escolha feita altera o rumo da história e o destino dos personagens ao seu redor.');
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Red Dead Redemption 2', 4.7, 2018, 'Role-playing (RPG), Adventure', 'XBox, Playstation, PC', 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/2.png', 'Um faroeste emocionante sobre honra, redenção e sobrevivência.', 'Red Dead Redemption mergulha o jogador em um Velho Oeste em transformação, onde foras da lei enfrentam um mundo moderno em ascensão. Na pele de John Marston, você embarca em uma jornada pessoal repleta de tiroteios, caçadas e dilemas morais que definem o fim da era dos pistoleiros.');
@@ -9,3 +11,16 @@ INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_d
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Ori and the Blind Forest', 4, 2015, 'Platform', 'XBox, Playstation, PC', 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/8.png', 'Uma fábula visualmente deslumbrante sobre perda e esperança.', 'Ori and the Blind Forest é uma aventura comovente em um mundo mágico onde a luz e a escuridão travam uma batalha eterna. Com arte pintada à mão, trilha sonora tocante e jogabilidade fluida, o jogo conta uma história sensível e inesquecível sobre coragem e sacrifício.');
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Cuphead', 4.6, 2017, 'Platform', 'XBox, Playstation, PC', 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/9.png', 'Tiros, chefes insanos e arte estilo anos 30.', 'Cuphead é um run-and-gun desafiador que combina mecânicas precisas com um estilo visual retrô, inspirado em desenhos animados dos anos 1930. Enfrente chefes únicos, domine padrões de ataque e mergulhe em um mundo animado com trilha sonora de jazz e animações desenhadas à mão.');
 INSERT INTO tb_game (title, score, game_year, genre, platforms, img_url, short_description, long_description) VALUES ('Sonic CD', 4, 1993, 'Platform', 'Sega CD, PC', 'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/10.png', 'Velocidade, viagem no tempo e muita atitude.', 'Sonic CD é uma das aventuras mais criativas do ouriço azul, introduzindo mecânicas de viagem no tempo e novos personagens icônicos como Amy e Metal Sonic. Com trilha sonora marcante e design de fases dinâmico, é uma joia cult para fãs da era clássica do Sonic.');
+
+
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (1, 1, 0);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (1, 2, 1);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (1, 3, 2);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (1, 4, 3);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (1, 5, 4);
+
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 6, 0);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 7, 1);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 8, 2);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 9, 3);
+INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 10, 4);

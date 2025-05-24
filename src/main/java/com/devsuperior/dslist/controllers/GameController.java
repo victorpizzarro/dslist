@@ -13,21 +13,33 @@ import com.devsuperior.dslist.dto.GameMinDTO;
 import com.devsuperior.dslist.services.GameService;
 
 @RestController
-@RequestMapping (value = "/games")
+@RequestMapping(value = "/games")
 public class GameController {
 
-	@Autowired
-	private GameService gameService;
-	
-	@GetMapping(value = "/{id}")
-	public GameDTO findById(@PathVariable Long id) {
-		GameDTO result = gameService.findById(id);
-		return result;
-	}
-	
-	@GetMapping
-	public List<GameMinDTO> findAll() {
-		List<GameMinDTO> result = gameService.findAll();
-		return result;
-	}
+    @Autowired
+    private GameService gameService;
+
+   
+    @GetMapping(value = "/{id}")
+    public GameDTO findById(@PathVariable Long id) {
+        return gameService.findById(id);
+    }
+
+  
+    @GetMapping
+    public List<GameMinDTO> findAll() {
+        return gameService.findAll();
+    }
+
+  
+    @GetMapping(value = "/list1")
+    public List<GameMinDTO> getList1() {
+        return gameService.findByList(1L);
+    }
+
+   
+    @GetMapping(value = "/list2")
+    public List<GameMinDTO> getList2() {
+        return gameService.findByList(2L);
+    }
 }
